@@ -5,11 +5,21 @@ const Hero = () => {
     <section className="hero" id="hero">
       <div className="hero-content">
         <h1 className="hero-name">Muskan Bandta</h1>
+        <div className="hero-tagline">
+          <span>Cloud</span>
+          <span className="hero-dot"></span>
+          <span>Frontend</span>
+          <span className="hero-dot"></span>
+          <span>SaaS</span>
+        </div>
         <p className="hero-description">
-          Passionate about building intelligent, scalable systems at the intersection of cloud and frontend development.
-          Results-oriented and adaptable, with strong problem-solving skills and a focus on delivering efficient, real-world
-          solutions. Committed to continuous learning and impactful execution. With hands-on experience in programming
-          and SaaS environments, I create solutions that work in the real world.
+          I'm a developer passionate about building intelligent, scalable systems at the intersection
+          of <span className="hero-highlight">cloud and frontend development</span>. With hands-on experience
+          in programming and <span className="hero-highlight">SaaS environments</span>, bringing a results-oriented
+          approach to creating efficient, real-world solutions. My adaptability and
+          strong <span className="hero-highlight">problem-solving skills</span> enable me to tackle complex
+          challenges while maintaining a focus on impactful execution. Driven by continuous learning
+          and a deep interest in technology.
         </p>
         <div className="hero-socials">
           <a href="https://linkedin.com/in/muskan-bandta2004/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
