@@ -134,12 +134,30 @@
 .hero-name {
   font-size: 3.5rem;
   font-weight: 800;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   letter-spacing: -1px;
+  background: linear-gradient(135deg, #6c63ff, #00d2ff, #6c63ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease infinite;
 }
 
-.dark .hero-name { color: #fff; }
-.light .hero-name { color: #1a1a2e; }
+@keyframes gradientShift {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+.light .hero-name {
+  background: linear-gradient(135deg, #4a3fd1, #0095b6, #4a3fd1);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease infinite;
+}
 
 .hero-title {
   font-size: 1.3rem;

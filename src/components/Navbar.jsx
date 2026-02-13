@@ -17,7 +17,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <a href="#" className="nav-logo">
-          &lt;Muskan /&gt;
+          MB
         </a>
 
         <div className={`nav-links ${menuOpen ? 'active' : ''}`}>

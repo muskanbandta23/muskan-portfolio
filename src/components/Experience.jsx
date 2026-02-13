@@ -15,7 +15,7 @@ const Experience = () => {
                 <h3>Cloud Associate</h3>
                 <span className="timeline-company">ZopDev</span>
               </div>
-              <span className="timeline-date">Current</span>
+              <span className="timeline-date">Nov 2025 - Present</span>
               <p>
                 Leveraging and developing skills in cloud computing and SaaS development.
                 Working on cloud infrastructure, gaining hands-on experience with cloud architecture,

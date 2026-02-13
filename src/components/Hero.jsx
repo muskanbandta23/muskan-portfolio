@@ -4,13 +4,12 @@ const Hero = () => {
   return (
     <section className="hero" id="hero">
       <div className="hero-content">
-        <p className="hero-greeting">Hello, I'm</p>
         <h1 className="hero-name">Muskan Bandta</h1>
-        <p className="hero-title">Cloud Associate at ZopDev</p>
         <p className="hero-description">
-          Building intelligent and scalable systems at the intersection of cloud and frontend technologies.
-          With hands-on experience in programming and SaaS environments, I create solutions that work in the real world.
-          Dedicated, adaptable, and driven by continuous learning to deliver impactful results.
+          Passionate about building intelligent, scalable systems at the intersection of cloud and frontend development.
+          Results-oriented and adaptable, with strong problem-solving skills and a focus on delivering efficient, real-world
+          solutions. Committed to continuous learning and impactful execution. With hands-on experience in programming
+          and SaaS environments, I create solutions that work in the real world.
         </p>
         <div className="hero-socials">
           <a href="https://linkedin.com/in/muskan-bandta2004/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
