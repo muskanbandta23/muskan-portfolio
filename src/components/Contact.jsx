@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import { FiSend, FiMail, FiUser, FiMessageSquare } from 'react-icons/fi'
+import { FiSend, FiMail, FiUser, FiMessageSquare, FiMapPin, FiArrowRight } from 'react-icons/fi'
 
 const Contact = () => {
   const formRef = useRef()
@@ -13,16 +13,11 @@ const Contact = () => {
     setSending(true)
     setError('')
 
-    // EmailJS: Replace these with your actual IDs after setting up at emailjs.com
-    // 1. Create account at https://www.emailjs.com/
-    // 2. Add Email Service (Gmail) -> get SERVICE_ID
-    // 3. Create Email Template -> get TEMPLATE_ID
-    // 4. Get your PUBLIC_KEY from Account > API Keys
     emailjs.sendForm(
-      'YOUR_SERVICE_ID',   // Replace with your EmailJS service ID
-      'YOUR_TEMPLATE_ID',  // Replace with your EmailJS template ID
+      'service_portfolio',
+      'template_contact',
       formRef.current,
-      'YOUR_PUBLIC_KEY'    // Replace with your EmailJS public key
+      'YOUR_PUBLIC_KEY'
     )
       .then(() => {
         setSent(true)
@@ -39,31 +34,51 @@ const Contact = () => {
   return (
     <section className="section contact" id="contact">
       <div className="container">
-        <h2 className="section-title">Let's Connect</h2>
-        <p className="section-subtitle">
-          Got an idea, a project, or just want to say hello? I'd love to hear from you!
-        </p>
+        <div className="contact-header">
+          <p className="contact-tagline">Have something in mind?</p>
+          <h2 className="contact-title">Let's Build Something<br /><span className="contact-title-accent">Amazing Together</span></h2>
+          <p className="contact-desc">
+            Whether it's a project, collaboration, or just a friendly hello — my inbox is always open.
+          </p>
+        </div>
+
         <div className="contact-wrapper">
           <div className="contact-info">
-            <div className="contact-info-item">
-              <FiMail size={20} />
+            <div className="contact-info-card">
+              <div className="contact-info-icon">
+                <FiMail size={22} />
+              </div>
               <div>
-                <h4>Email</h4>
+                <h4>Drop an Email</h4>
                 <a href="mailto:muskanbandta1@gmail.com">muskanbandta1@gmail.com</a>
               </div>
+              <FiArrowRight className="contact-info-arrow" size={16} />
             </div>
-            <div className="contact-info-item">
-              <FiUser size={20} />
+            <div className="contact-info-card">
+              <div className="contact-info-icon">
+                <FiUser size={22} />
+              </div>
               <div>
-                <h4>LinkedIn</h4>
+                <h4>Connect on LinkedIn</h4>
                 <a href="https://linkedin.com/in/muskan-bandta2004/" target="_blank" rel="noopener noreferrer">
                   linkedin.com/in/muskan-bandta2004
                 </a>
+              </div>
+              <FiArrowRight className="contact-info-arrow" size={16} />
+            </div>
+            <div className="contact-info-card">
+              <div className="contact-info-icon">
+                <FiMapPin size={22} />
+              </div>
+              <div>
+                <h4>Based in</h4>
+                <span>India</span>
               </div>
             </div>
           </div>
 
           <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
+            <h3 className="form-heading">Send me a message</h3>
             <div className="form-group">
               <label htmlFor="user_name">
                 <FiUser size={16} />
@@ -83,7 +98,7 @@ const Contact = () => {
                 <FiMessageSquare size={16} />
                 Message
               </label>
-              <textarea id="message" name="message" required rows="5" placeholder="Your message..."></textarea>
+              <textarea id="message" name="message" required rows="5" placeholder="Tell me about your idea..."></textarea>
             </div>
             <button type="submit" className="btn-submit" disabled={sending}>
               {sending ? 'Sending...' : sent ? 'Message Sent!' : <>Send Message <FiSend size={16} /></>}
