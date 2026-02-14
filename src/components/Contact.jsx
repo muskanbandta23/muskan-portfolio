@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { FiSend, FiMail, FiUser, FiMessageSquare, FiMapPin, FiArrowRight } from 'react-icons/fi'
+import { FiSend, FiMail, FiUser, FiMessageSquare } from 'react-icons/fi'
+import { FaLinkedinIn } from 'react-icons/fa'
 
 const Contact = () => {
   const [sending, setSending] = useState(false)
@@ -43,37 +44,24 @@ const Contact = () => {
 
         <div className="contact-wrapper">
           <div className="contact-info">
-            <div className="contact-info-card">
+            <a href="mailto:muskanbandta1@gmail.com" className="contact-info-item">
               <div className="contact-info-icon">
-                <FiMail size={22} />
+                <FiMail size={20} />
               </div>
-              <div>
-                <h4>Drop an Email</h4>
-                <a href="mailto:muskanbandta1@gmail.com">muskanbandta1@gmail.com</a>
+              <div className="contact-info-text">
+                <span className="contact-info-label">Email</span>
+                <span className="contact-info-value">muskanbandta1@gmail.com</span>
               </div>
-              <FiArrowRight className="contact-info-arrow" size={16} />
-            </div>
-            <div className="contact-info-card">
+            </a>
+            <a href="https://linkedin.com/in/muskan-bandta2004/" target="_blank" rel="noopener noreferrer" className="contact-info-item">
               <div className="contact-info-icon">
-                <FiUser size={22} />
+                <FaLinkedinIn size={20} />
               </div>
-              <div>
-                <h4>Connect on LinkedIn</h4>
-                <a href="https://linkedin.com/in/muskan-bandta2004/" target="_blank" rel="noopener noreferrer">
-                  linkedin.com/in/muskan-bandta2004
-                </a>
+              <div className="contact-info-text">
+                <span className="contact-info-label">LinkedIn</span>
+                <span className="contact-info-value">muskan-bandta2004</span>
               </div>
-              <FiArrowRight className="contact-info-arrow" size={16} />
-            </div>
-            <div className="contact-info-card">
-              <div className="contact-info-icon">
-                <FiMapPin size={22} />
-              </div>
-              <div>
-                <h4>Based in</h4>
-                <span>India</span>
-              </div>
-            </div>
+            </a>
           </div>
 
           <form onSubmit={handleSubmit} className="contact-form">
