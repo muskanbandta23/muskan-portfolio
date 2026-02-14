@@ -1,10 +1,12 @@
 import { FiUser, FiMail } from 'react-icons/fi'
+import profileImg from '../assets/profile.jpeg'
 
 const About = () => {
   return (
     <section className="section about" id="about">
       <div className="container">
         <h2 className="section-title">About Myself</h2>
+        <img src={profileImg} alt="Muskan Bandta" className="about-profile-img" />
         <div className="about-content">
           <div className="about-text">
             <p>
@@ -19,8 +21,9 @@ const About = () => {
             </p>
             <p>
               Currently, I'm working as a <strong>Cloud Associate (Intern) at ZopDev</strong>, developing my expertise in cloud
-              computing and SaaS development. I work on cloud infrastructure and backend systems to support scalable
-              SaaS solutions, contributing to cost-aware, performance-driven architectures for real-world business use cases.
+              computing and SaaS development. Working on cloud infrastructure and backend systems at ZopDev, gaining
+              hands-on experience in cloud architecture, deployment pipelines, and scalable backend solutions to support
+              SaaS applications and real-world business needs.
             </p>
           </div>
           <div className="about-info-cards">

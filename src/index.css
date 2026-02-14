@@ -48,6 +48,7 @@ img { max-width: 100%; }
   font-weight: 700;
   margin-bottom: 40px;
   text-align: center;
+  animation: fadeInUp 0.6s ease;
 }
 
 .dark .section-title { color: #fff; }
@@ -58,7 +59,7 @@ img { max-width: 100%; }
   display: block;
   width: 60px;
   height: 3px;
-  background: linear-gradient(90deg, #FF6B35, #FFD166);
+  background: linear-gradient(90deg, #8b597b, #efa3a0);
   margin: 12px auto 0;
   border-radius: 2px;
 }
