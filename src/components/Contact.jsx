@@ -1,34 +1,36 @@
-import { useState, useRef } from 'react'
-import emailjs from '@emailjs/browser'
+import { useState } from 'react'
 import { FiSend, FiMail, FiUser, FiMessageSquare, FiMapPin, FiArrowRight } from 'react-icons/fi'
 
 const Contact = () => {
-  const formRef = useRef()
   const [sending, setSending] = useState(false)
   const [sent, setSent] = useState(false)
   const [error, setError] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setSending(true)
     setError('')
 
-    emailjs.sendForm(
-      'service_portfolio',
-      'template_contact',
-      formRef.current,
-      'YOUR_PUBLIC_KEY'
-    )
-      .then(() => {
+    const formData = new FormData(e.target)
+    formData.append('access_key', '0e469a8a-7f82-4754-98d3-142c8a66e8a5')
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+      const data = await res.json()
+      if (data.success) {
         setSent(true)
-        setSending(false)
-        formRef.current.reset()
+        e.target.reset()
         setTimeout(() => setSent(false), 5000)
-      })
-      .catch(() => {
-        setError('Failed to send message. Please try emailing directly.')
-        setSending(false)
-      })
+      } else {
+        setError('Failed to send. Please try emailing directly.')
+      }
+    } catch {
+      setError('Failed to send. Please try emailing directly.')
+    }
+    setSending(false)
   }
 
   return (
@@ -37,9 +39,6 @@ const Contact = () => {
         <div className="contact-header">
           <p className="contact-tagline">Have something in mind?</p>
           <h2 className="contact-title">Let's Build Something<br /><span className="contact-title-accent">Amazing Together</span></h2>
-          <p className="contact-desc">
-            Whether it's a project, collaboration, or just a friendly hello — my inbox is always open.
-          </p>
         </div>
 
         <div className="contact-wrapper">
@@ -77,21 +76,21 @@ const Contact = () => {
             </div>
           </div>
 
-          <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
+          <form onSubmit={handleSubmit} className="contact-form">
             <h3 className="form-heading">Send me a message</h3>
             <div className="form-group">
-              <label htmlFor="user_name">
+              <label htmlFor="name">
                 <FiUser size={16} />
                 Name
               </label>
-              <input type="text" id="user_name" name="user_name" required placeholder="Your name" />
+              <input type="text" id="name" name="name" required placeholder="Your name" />
             </div>
             <div className="form-group">
-              <label htmlFor="user_email">
+              <label htmlFor="email">
                 <FiMail size={16} />
                 Email
               </label>
-              <input type="email" id="user_email" name="user_email" required placeholder="your@email.com" />
+              <input type="email" id="email" name="email" required placeholder="your@email.com" />
             </div>
             <div className="form-group">
               <label htmlFor="message">
