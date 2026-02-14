@@ -21,9 +21,7 @@ const About = () => {
             </p>
             <p>
               Currently, I'm working as a <strong>Cloud Associate (Intern) at ZopDev</strong>, developing my expertise in cloud
-              computing and SaaS development. Working on cloud infrastructure and backend systems at ZopDev, gaining
-              hands-on experience in cloud architecture, deployment pipelines, and scalable backend solutions to support
-              SaaS applications and real-world business needs.
+              computing and SaaS development. Working on cloud infrastructure and backend systems at ZopDev.
             </p>
           </div>
           <div className="about-info-cards">

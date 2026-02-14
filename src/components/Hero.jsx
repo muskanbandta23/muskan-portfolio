@@ -10,10 +10,8 @@ const Hero = () => {
         <p className="hero-description">
           Driven to create intelligent, and scalable systems at the intersection of cloud and
           frontend development. With hands-on experience in programming,
-          AI, and SaaS environments, bringing a results-oriented approach to creating efficient,
-          real-world solutions. Having a deep interest in the evolving AI landscape and its impact
-          on product innovation and modern system architecture. Driven by continuous learning,
-          I constantly strive to grow and stay aligned with emerging technologies.
+          AI, and SaaS environments. Having a deep interest in the evolving AI landscape and its impact
+          on product innovation and modern system architecture.
         </p>
         <div className="hero-socials">
           <a href="https://linkedin.com/in/muskan-bandta2004/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

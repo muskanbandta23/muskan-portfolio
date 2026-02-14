@@ -39,9 +39,9 @@ const Contact = () => {
   return (
     <section className="section contact" id="contact">
       <div className="container">
-        <h2 className="section-title">Get In Touch</h2>
+        <h2 className="section-title">Let's Connect</h2>
         <p className="section-subtitle">
-          Have a project in mind or want to connect? Drop me a message!
+          Got an idea, a project, or just want to say hello? I'd love to hear from you!
         </p>
         <div className="contact-wrapper">
           <div className="contact-info">
