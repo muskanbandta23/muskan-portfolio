@@ -12,7 +12,7 @@ const Contact = () => {
     setError('')
 
     const formData = new FormData(e.target)
-    formData.append('access_key', '0e469a8a-7f82-4754-98d3-142c8a66e8a5')
+    formData.append('access_key', '9853f041-9306-473a-b74d-15aedc2a0401')
 
     try {
       const res = await fetch('https://api.web3forms.com/submit', {
