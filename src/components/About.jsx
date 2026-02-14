@@ -18,7 +18,7 @@ const About = () => {
               user-friendly digital applications.
             </p>
             <p>
-              Currently, I'm a <strong>Cloud Associate (Intern) at ZopDev</strong>, developing my expertise in cloud
+              Currently, I'm working as a <strong>Cloud Associate (Intern) at ZopDev</strong>, developing my expertise in cloud
               computing and SaaS development. I work on cloud infrastructure and backend systems to support scalable
               SaaS solutions, contributing to cost-aware, performance-driven architectures for real-world business use cases.
             </p>

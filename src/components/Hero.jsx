@@ -6,14 +6,11 @@ const Hero = () => {
       <div className="hero-content">
         <p className="hero-intro">Hey, I'm</p>
         <h1 className="hero-name">Muskan</h1>
-        <p className="hero-subtitle">
-          A Developer<span className="cursor">|</span>
-        </p>
         <p className="hero-description">
-          I'm a developer passionate about building intelligent, scalable systems at the
+          I'm a Cloud & Frontend Engineer passionate about building intelligent, scalable systems at the
           intersection of cloud and frontend development. With hands-on experience in programming,
-          AI, and SaaS environments, I bring a results-oriented approach to creating efficient,
-          real-world solutions. I have a deep interest in the evolving AI landscape and its impact
+          AI, and SaaS environments, bringing a results-oriented approach to creating efficient,
+          real-world solutions. Having a deep interest in the evolving AI landscape and its impact
           on product innovation and modern system architecture. Driven by continuous learning,
           I constantly strive to grow and stay aligned with emerging technologies.
         </p>
