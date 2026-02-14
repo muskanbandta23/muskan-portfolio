@@ -1,3 +1,5 @@
+import { FiUser, FiMail } from 'react-icons/fi'
+
 const About = () => {
   return (
     <section className="section about" id="about">
@@ -6,33 +8,40 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              Hey! My name is Muskan, a Computer Science Engineering graduate from Chitkara University.
-              Passionate about designing scalable digital solutions and solving real-world tech problems,
-              with expertise in programming languages like Java and C++, and a growing interest in
-              frontend development and modern cloud technologies.
+              Hey! I'm <strong>Muskan</strong>, a Computer Science Engineering graduate from Chitkara University, Punjab.
+              Driven to design scalable digital solutions and solve real-world technical problems, with hands-on
+              experience in programming languages like Java and C++, frontend development, UI/UX design, and cloud computing.
             </p>
             <p>
-              Currently working as a <strong>Cloud Associate (Intern) at ZopDev</strong>, where I leverage and develop
-              skills in cloud computing and SaaS development. Work on cloud infrastructure and backend systems
-              to support scalable SaaS solutions. Contribute to scalable, cost-aware solutions for real-world
-              business use cases.
+              I have also worked with technologies and domains including AI/ML, SQL, DBMS, and Computer Networks.
+              I've contributed to projects as a Frontend Developer and UI/UX Designer, building practical and
+              user-friendly digital applications.
             </p>
-            <div className="about-details">
-              <div className="about-detail">
-                <span className="detail-label">Name</span>
-                <span className="detail-value">Muskan Bandta</span>
+            <p>
+              Currently, I'm a <strong>Cloud Associate (Intern) at ZopDev</strong>, developing my expertise in cloud
+              computing and SaaS development. I work on cloud infrastructure and backend systems to support scalable
+              SaaS solutions, contributing to cost-aware, performance-driven architectures for real-world business use cases.
+            </p>
+          </div>
+          <div className="about-info-cards">
+            <div className="info-card">
+              <div className="info-card-icon">
+                <FiUser size={20} />
               </div>
-              <div className="about-detail">
-                <span className="detail-label">Email</span>
-                <span className="detail-value">muskanbandta1@gmail.com</span>
+              <div className="info-card-content">
+                <span className="info-card-label">Name</span>
+                <span className="info-card-value">Muskan Bandta</span>
               </div>
-              <div className="about-detail">
-                <span className="detail-label">Location</span>
-                <span className="detail-value">Bengaluru, India</span>
+            </div>
+            <div className="info-card">
+              <div className="info-card-icon">
+                <FiMail size={20} />
               </div>
-              <div className="about-detail">
-                <span className="detail-label">Current Role</span>
-                <span className="detail-value">Cloud Associate @ ZopDev</span>
+              <div className="info-card-content">
+                <span className="info-card-label">Email</span>
+                <a href="mailto:muskanbandta1@gmail.com" className="info-card-value info-card-link">
+                  muskanbandta1@gmail.com
+                </a>
               </div>
             </div>
           </div>

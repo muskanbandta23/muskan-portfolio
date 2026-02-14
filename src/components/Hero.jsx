@@ -4,22 +4,18 @@ const Hero = () => {
   return (
     <section className="hero" id="hero">
       <div className="hero-content">
-        <h1 className="hero-name">Muskan Bandta</h1>
-        <div className="hero-tagline">
-          <span>Cloud</span>
-          <span className="hero-dot"></span>
-          <span>Frontend</span>
-          <span className="hero-dot"></span>
-          <span>SaaS</span>
-        </div>
+        <p className="hero-intro">Hey, I'm</p>
+        <h1 className="hero-name">Muskan</h1>
+        <p className="hero-subtitle">
+          A Developer<span className="cursor">|</span>
+        </p>
         <p className="hero-description">
-          I'm a developer passionate about building intelligent, scalable systems at the intersection
-          of <span className="hero-highlight">cloud and frontend development</span>. With hands-on experience
-          in programming and <span className="hero-highlight">SaaS environments</span>, bringing a results-oriented
-          approach to creating efficient, real-world solutions. My adaptability and
-          strong <span className="hero-highlight">problem-solving skills</span> enable me to tackle complex
-          challenges while maintaining a focus on impactful execution. Driven by continuous learning
-          and a deep interest in technology.
+          I'm a developer passionate about building intelligent, scalable systems at the
+          intersection of cloud and frontend development. With hands-on experience in programming,
+          AI, and SaaS environments, I bring a results-oriented approach to creating efficient,
+          real-world solutions. I have a deep interest in the evolving AI landscape and its impact
+          on product innovation and modern system architecture. Driven by continuous learning,
+          I constantly strive to grow and stay aligned with emerging technologies.
         </p>
         <div className="hero-socials">
           <a href="https://linkedin.com/in/muskan-bandta2004/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
