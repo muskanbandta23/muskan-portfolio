@@ -38,8 +38,8 @@ const Contact = () => {
     <section className="section contact" id="contact">
       <div className="container">
         <div className="contact-header">
-          <p className="contact-tagline">Have something in mind?</p>
-          <h2 className="contact-title">Let's Build Something<br /><span className="contact-title-accent">Amazing Together</span></h2>
+          <p className="contact-tagline">Got a Cool Idea?</p>
+          <h2 className="contact-title">Let's Make It<br /><span className="contact-title-accent">Happen</span></h2>
         </div>
 
         <div className="contact-wrapper">
@@ -65,7 +65,8 @@ const Contact = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="contact-form">
-            <h3 className="form-heading">Send me a message</h3>
+            <h3 className="form-heading">Drop a Message</h3>
+            <p className="form-subtitle">I'll get back to you soon!</p>
             <div className="form-group">
               <label htmlFor="name">
                 <FiUser size={16} />
