@@ -38,8 +38,8 @@ const Contact = () => {
     <section className="section contact" id="contact">
       <div className="container">
         <div className="contact-header">
-          <p className="contact-tagline">Got a Cool Idea?</p>
-          <h2 className="contact-title">Let's Make It<br /><span className="contact-title-accent">Happen</span></h2>
+          <p className="contact-tagline">Have something in mind?</p>
+          <h2 className="contact-title">Let's Build Something<br /><span className="contact-title-accent">Amazing Together</span></h2>
         </div>
 
         <div className="contact-wrapper">
