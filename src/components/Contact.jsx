@@ -65,8 +65,16 @@ const Contact = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="contact-form">
-            <h3 className="form-heading">Drop a Message</h3>
-            <p className="form-subtitle">I'll get back to you soon!</p>
+            <div className="form-header">
+              <div className="form-header-icon">
+                <FiSend size={20} />
+              </div>
+              <div>
+                <h3 className="form-heading">Drop a Message</h3>
+                <p className="form-subtitle">I'd love to hear from you!</p>
+              </div>
+            </div>
+            <div className="form-divider"></div>
             <div className="form-group">
               <label htmlFor="name">
                 <FiUser size={16} />
