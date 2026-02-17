@@ -1,4 +1,4 @@
-import { FiUser, FiMail } from 'react-icons/fi'
+import { FiUser, FiMail, FiMapPin, FiGlobe } from 'react-icons/fi'
 import profileImg from '../assets/profile.jpeg'
 
 const About = () => {
@@ -24,26 +24,22 @@ const About = () => {
               computing and SaaS development. Working on cloud infrastructure and backend systems at ZopDev.
             </p>
           </div>
-          <div className="about-info-cards">
-            <div className="info-card">
-              <div className="info-card-icon">
-                <FiUser size={20} />
-              </div>
-              <div className="info-card-content">
-                <span className="info-card-label">Name</span>
-                <span className="info-card-value">Muskan Bandta</span>
-              </div>
+          <div className="about-info-grid">
+            <div className="info-chip">
+              <FiUser size={16} />
+              <span>Muskan Bandta</span>
             </div>
-            <div className="info-card">
-              <div className="info-card-icon">
-                <FiMail size={20} />
-              </div>
-              <div className="info-card-content">
-                <span className="info-card-label">Email</span>
-                <a href="mailto:muskanbandta1@gmail.com" className="info-card-value info-card-link">
-                  muskanbandta1@gmail.com
-                </a>
-              </div>
+            <a href="mailto:muskanbandta1@gmail.com" className="info-chip info-chip-link">
+              <FiMail size={16} />
+              <span>muskanbandta1@gmail.com</span>
+            </a>
+            <div className="info-chip">
+              <FiMapPin size={16} />
+              <span>Punjab, India</span>
+            </div>
+            <div className="info-chip">
+              <FiGlobe size={16} />
+              <span>Open to Work</span>
             </div>
           </div>
         </div>
