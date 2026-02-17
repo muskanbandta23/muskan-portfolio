@@ -1381,8 +1381,8 @@
   margin-top: 4px;
 }
 
-.dark .footer-copyright { color: #444; }
-.light .footer-copyright { color: #bbb; }
+.dark .footer-copyright { color: #777; }
+.light .footer-copyright { color: #888; }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
