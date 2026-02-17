@@ -1106,86 +1106,121 @@
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding-top: 12px;
+  gap: 16px;
+  padding-top: 8px;
 }
 
-.contact-info-item {
+.contact-info-heading {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.dark .contact-info-heading { color: #999; }
+.light .contact-info-heading { color: #777; }
+
+.contact-info-card {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 20px;
-  border-radius: 12px;
+  justify-content: space-between;
+  padding: 22px 24px;
+  border-radius: 14px;
   text-decoration: none;
   transition: all 0.3s ease;
   animation: fadeInUp 0.5s ease both;
 }
 
-.contact-info-item:nth-child(1) { animation-delay: 0.1s; }
-.contact-info-item:nth-child(2) { animation-delay: 0.2s; }
+.contact-info-card:nth-child(2) { animation-delay: 0.1s; }
+.contact-info-card:nth-child(3) { animation-delay: 0.2s; }
 
-.contact-info-item:hover {
+.contact-info-card:hover {
   transform: translateY(-3px);
 }
 
-.dark .contact-info-item {
+.dark .contact-info-card {
   background: #111;
-  border: 1px solid #1a1a1a;
+  border: 1px solid rgba(201,120,126,0.15);
+}
+.dark .contact-info-card:hover {
+  border-color: rgba(201,120,126,0.4);
+  box-shadow: 0 8px 28px rgba(201,120,126,0.12);
 }
 
-.dark .contact-info-item:hover {
-  box-shadow: 0 8px 24px rgba(201,120,126,0.15);
-}
-
-.light .contact-info-item {
+.light .contact-info-card {
   background: #fff;
-  border: 1px solid #e8e8e8;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border: 1px solid rgba(212,99,107,0.12);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+}
+.light .contact-info-card:hover {
+  border-color: rgba(212,99,107,0.35);
+  box-shadow: 0 8px 28px rgba(212,99,107,0.08);
 }
 
-.light .contact-info-item:hover {
-  box-shadow: 0 8px 24px rgba(212,99,107,0.1);
+.contact-card-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.contact-info-icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
+.contact-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
 
-.dark .contact-info-icon { background: rgba(201,120,126,0.1); color: #C9787E; }
-.light .contact-info-icon { background: rgba(212,99,107,0.08); color: #D4636B; }
+.dark .contact-card-icon { background: rgba(201,120,126,0.12); color: #C9787E; }
+.light .contact-card-icon { background: rgba(212,99,107,0.08); color: #D4636B; }
 
-.contact-info-text {
+.dark .contact-card-icon-linkedin { background: rgba(244,184,193,0.1); color: #F4B8C1; }
+.light .contact-card-icon-linkedin { background: rgba(201,120,126,0.08); color: #C9787E; }
+
+.contact-card-details {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
 }
 
-.contact-info-label {
-  font-size: 0.7rem;
+.contact-card-title {
+  font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
 }
 
-.dark .contact-info-label { color: #C9787E; }
-.light .contact-info-label { color: #D4636B; }
+.dark .contact-card-title { color: #e8e8e8; }
+.light .contact-card-title { color: #333; }
 
-.contact-info-value {
-  font-size: 0.85rem;
-  font-weight: 500;
+.contact-card-value {
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
-.dark .contact-info-value { color: #ccc; }
-.light .contact-info-value { color: #444; }
+.dark .contact-card-value { color: #888; }
+.light .contact-card-value { color: #888; }
 
-.dark .contact-info-item:hover .contact-info-value { color: #F4B8C1; }
-.light .contact-info-item:hover .contact-info-value { color: #C9787E; }
+.dark .contact-info-card:hover .contact-card-title { color: #F4B8C1; }
+.light .contact-info-card:hover .contact-card-title { color: #C9787E; }
+
+.contact-card-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.dark .contact-card-arrow { background: rgba(201,120,126,0.1); color: #C9787E; }
+.light .contact-card-arrow { background: rgba(212,99,107,0.06); color: #D4636B; }
+
+.contact-info-card:hover .contact-card-arrow {
+  transform: translate(3px, -3px);
+}
+.dark .contact-info-card:hover .contact-card-arrow { background: rgba(201,120,126,0.2); color: #F4B8C1; }
+.light .contact-info-card:hover .contact-card-arrow { background: rgba(212,99,107,0.12); color: #C9787E; }
 
 .contact-form {
   display: flex;

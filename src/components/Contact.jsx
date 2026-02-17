@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FiSend, FiMail, FiUser, FiMessageSquare } from 'react-icons/fi'
+import { FiSend, FiMail, FiUser, FiMessageSquare, FiArrowUpRight } from 'react-icons/fi'
 import { FaLinkedinIn } from 'react-icons/fa'
 
 const Contact = () => {
@@ -44,22 +44,35 @@ const Contact = () => {
 
         <div className="contact-wrapper">
           <div className="contact-info">
-            <a href="mailto:muskanbandta1@gmail.com" className="contact-info-item">
-              <div className="contact-info-icon">
-                <FiMail size={20} />
+            <p className="contact-info-heading">Prefer a direct conversation?</p>
+
+            <a href="mailto:muskanbandta1@gmail.com" className="contact-info-card">
+              <div className="contact-card-left">
+                <div className="contact-card-icon">
+                  <FiMail size={22} />
+                </div>
+                <div className="contact-card-details">
+                  <span className="contact-card-title">Shoot me an Email</span>
+                  <span className="contact-card-value">muskanbandta1@gmail.com</span>
+                </div>
               </div>
-              <div className="contact-info-text">
-                <span className="contact-info-label">Email</span>
-                <span className="contact-info-value">muskanbandta1@gmail.com</span>
+              <div className="contact-card-arrow">
+                <FiArrowUpRight size={18} />
               </div>
             </a>
-            <a href="https://linkedin.com/in/muskan-bandta2004/" target="_blank" rel="noopener noreferrer" className="contact-info-item">
-              <div className="contact-info-icon">
-                <FaLinkedinIn size={20} />
+
+            <a href="https://linkedin.com/in/muskan-bandta2004/" target="_blank" rel="noopener noreferrer" className="contact-info-card">
+              <div className="contact-card-left">
+                <div className="contact-card-icon contact-card-icon-linkedin">
+                  <FaLinkedinIn size={22} />
+                </div>
+                <div className="contact-card-details">
+                  <span className="contact-card-title">Let's Connect on LinkedIn</span>
+                  <span className="contact-card-value">muskan-bandta2004</span>
+                </div>
               </div>
-              <div className="contact-info-text">
-                <span className="contact-info-label">LinkedIn</span>
-                <span className="contact-info-value">muskan-bandta2004</span>
+              <div className="contact-card-arrow">
+                <FiArrowUpRight size={18} />
               </div>
             </a>
           </div>
