@@ -47,7 +47,7 @@
 .nav-logo:hover { opacity: 0.8; }
 
 .light .nav-logo {
-  background: linear-gradient(135deg, #1F2933, #1E3A8A);
+  background: linear-gradient(135deg, #1E3A8A, #38BDF8);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -208,7 +208,7 @@
 }
 
 .light .hero-name {
-  background: linear-gradient(135deg, #1F2933, #1E3A8A, #1F2933, #1F2933);
+  background: linear-gradient(135deg, #1E3A8A, #38BDF8, #1E3A8A, #1E3A8A);
   background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -604,11 +604,25 @@
   overflow: hidden;
 }
 
+.skill-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1E3A8A, #38BDF8, #1E3A8A);
+  background-size: 200% auto;
+  animation: shimmer 3s ease infinite;
+}
+
 .skill-category:nth-child(1) { animation-delay: 0s; }
 .skill-category:nth-child(2) { animation-delay: 0.15s; }
 .skill-category:nth-child(3) { animation-delay: 0.3s; }
+.skill-category:nth-child(2)::before { animation-delay: 0.5s; }
+.skill-category:nth-child(3)::before { animation-delay: 1s; }
 
-.skill-category:hover { transform: translateY(-3px); }
+.skill-category:hover { transform: translateY(-5px); }
 
 .dark .skill-category {
   background-image: linear-gradient(#111, #111), linear-gradient(135deg, #1E3A8A, #38BDF8, #1E3A8A);
@@ -617,38 +631,43 @@
   background-size: 100% 100%, 200% 200%;
   animation: fadeInUp 0.6s ease both, shimmer 4s ease infinite;
 }
-.dark .skill-category:hover { box-shadow: 0 8px 24px rgba(30,58,138,0.15); }
+.dark .skill-category:hover { box-shadow: 0 12px 32px rgba(30,58,138,0.25); }
 
 .light .skill-category {
-  background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #1F2933, #1E3A8A, #1F2933);
+  background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #1E3A8A, #38BDF8, #1E3A8A);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   background-size: 100% 100%, 200% 200%;
   box-shadow: 0 2px 16px rgba(0,0,0,0.04);
   animation: fadeInUp 0.6s ease both, shimmer 4s ease infinite;
 }
-.light .skill-category:hover { box-shadow: 0 8px 24px rgba(31,41,51,0.1); }
+.light .skill-category:hover { box-shadow: 0 12px 32px rgba(30,58,138,0.15); }
 
 .skill-category-header {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 14px;
+  margin-bottom: 22px;
 }
 
 .skill-category-icon {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.1rem;
 }
 
-.dark .skill-category-icon { background: rgba(30,58,138,0.15); color: #1E3A8A; }
-.light .skill-category-icon { background: rgba(31,41,51,0.1); color: #1F2933; }
+.dark .skill-category-icon { background: linear-gradient(135deg, #1E3A8A, #38BDF8); color: #fff; }
+.light .skill-category-icon { background: linear-gradient(135deg, #1E3A8A, #38BDF8); color: #fff; }
 
-.skill-category h3 { font-size: 1rem; font-weight: 600; }
+.skill-category h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
 .dark .skill-category h3 { color: #fff; }
 .light .skill-category h3 { color: #1a1a2e; }
 
@@ -657,36 +676,39 @@
 .skill-tag {
   font-size: 0.85rem;
   padding: 8px 18px;
-  border-radius: 8px;
+  border-radius: 20px;
   font-weight: 500;
   transition: all 0.3s ease;
   cursor: default;
+  position: relative;
 }
 
 .dark .skill-tag {
-  background: linear-gradient(135deg, rgba(30,58,138,0.08), rgba(56,189,248,0.08));
-  color: #d0d0d0;
-  border: 1px solid rgba(30,58,138,0.2);
+  background: linear-gradient(135deg, rgba(30,58,138,0.15), rgba(56,189,248,0.1));
+  color: #38BDF8;
+  border: 1px solid rgba(56,189,248,0.2);
 }
 
 .light .skill-tag {
-  background: linear-gradient(135deg, rgba(31,41,51,0.06), rgba(30,58,138,0.06));
-  color: #444;
-  border: 1px solid rgba(31,41,51,0.15);
+  background: linear-gradient(135deg, rgba(30,58,138,0.08), rgba(56,189,248,0.08));
+  color: #1E3A8A;
+  border: 1px solid rgba(30,58,138,0.2);
 }
 
 .dark .skill-tag:hover {
-  box-shadow: 0 0 16px rgba(30,58,138,0.3);
-  border-color: #1E3A8A;
+  box-shadow: 0 0 20px rgba(56,189,248,0.25);
+  border-color: #38BDF8;
+  background: linear-gradient(135deg, rgba(30,58,138,0.25), rgba(56,189,248,0.2));
   color: #fff;
-  transform: scale(1.05);
+  transform: translateY(-2px) scale(1.05);
 }
 
 .light .skill-tag:hover {
-  box-shadow: 0 0 16px rgba(31,41,51,0.2);
-  border-color: #1F2933;
-  color: #1a1a2e;
-  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(30,58,138,0.2);
+  border-color: #1E3A8A;
+  background: linear-gradient(135deg, rgba(30,58,138,0.15), rgba(56,189,248,0.12));
+  color: #1E3A8A;
+  transform: translateY(-2px) scale(1.05);
 }
 
 /* ===== PROJECTS ===== */
@@ -725,7 +747,7 @@
   animation: fadeInUp 0.6s ease both, shimmer 4s ease infinite;
 }
 .light .project-card {
-  background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #1F2933, #1E3A8A, #1F2933);
+  background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #1E3A8A, #38BDF8, #1E3A8A);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   background-size: 100% 100%, 200% 200%;
@@ -891,7 +913,7 @@
 }
 
 .light .achievement-featured-card {
-  background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #1F2933, #1E3A8A, #1F2933);
+  background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #1E3A8A, #38BDF8, #1E3A8A);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   background-size: 100% 100%, 200% 200%;
@@ -1199,7 +1221,7 @@
 }
 
 .light .contact-form {
-  background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #1F2933, #1E3A8A, #1F2933);
+  background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #1E3A8A, #38BDF8, #1E3A8A);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   background-size: 100% 100%, 200% 200%;
@@ -1240,7 +1262,7 @@
 }
 
 .light .form-heading {
-  background: linear-gradient(135deg, #1F2933, #1E3A8A);
+  background: linear-gradient(135deg, #1E3A8A, #38BDF8);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1414,7 +1436,7 @@
 .light .footer-text { color: #999; }
 
 .light .footer-text span {
-  background: linear-gradient(135deg, #1F2933, #1E3A8A);
+  background: linear-gradient(135deg, #1E3A8A, #38BDF8);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
