@@ -593,21 +593,21 @@
 
 .dark .skill-category {
   background: #111;
-  border: 1px solid rgba(201,120,126,0.15);
+  border: 1px solid rgba(201,120,126,0.35);
 }
 .dark .skill-category:hover {
-  border-color: rgba(201,120,126,0.35);
-  box-shadow: 0 8px 24px rgba(201,120,126,0.1);
+  border-color: rgba(201,120,126,0.55);
+  box-shadow: 0 8px 24px rgba(201,120,126,0.12);
 }
 
 .light .skill-category {
   background: #fff;
-  border: 1px solid rgba(201,120,126,0.1);
+  border: 1px solid rgba(212,99,107,0.25);
   box-shadow: 0 2px 12px rgba(0,0,0,0.03);
 }
 .light .skill-category:hover {
-  border-color: rgba(201,120,126,0.2);
-  box-shadow: 0 8px 24px rgba(201,120,126,0.06);
+  border-color: rgba(212,99,107,0.45);
+  box-shadow: 0 8px 24px rgba(212,99,107,0.08);
 }
 
 .skill-category-number {
