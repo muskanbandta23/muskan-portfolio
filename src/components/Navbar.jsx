@@ -36,6 +36,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)} aria-label="Toggle theme">
             {darkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
           </button>
+          <a href="#contact" className="nav-cta">Let's Talk</a>
           <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
             {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
