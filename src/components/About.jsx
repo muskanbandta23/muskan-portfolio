@@ -1,4 +1,4 @@
-import { FiUser, FiMail, FiMapPin, FiGlobe } from 'react-icons/fi'
+import { FiUser, FiMail } from 'react-icons/fi'
 import profileImg from '../assets/profile.jpeg'
 
 const About = () => {
@@ -33,14 +33,6 @@ const About = () => {
               <FiMail size={16} />
               <span>muskanbandta1@gmail.com</span>
             </a>
-            <div className="info-chip">
-              <FiMapPin size={16} />
-              <span>Punjab, India</span>
-            </div>
-            <div className="info-chip">
-              <FiGlobe size={16} />
-              <span>Open to Work</span>
-            </div>
           </div>
         </div>
       </div>
