@@ -595,7 +595,7 @@
 }
 
 .skill-category {
-  padding: 28px;
+  padding: 28px 28px 24px;
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeInUp 0.6s ease both;
@@ -611,89 +611,126 @@
 
 .dark .skill-category {
   background: #111;
-  border: 1px solid rgba(124,58,237,0.2);
+  border: 1px solid rgba(124,58,237,0.15);
 }
 .dark .skill-category:hover {
-  border-color: rgba(124,58,237,0.4);
-  box-shadow: 0 8px 24px rgba(124,58,237,0.12);
+  border-color: rgba(124,58,237,0.35);
+  box-shadow: 0 8px 24px rgba(124,58,237,0.1);
 }
 
 .light .skill-category {
   background: #fff;
-  border: 1px solid rgba(124,58,237,0.12);
+  border: 1px solid rgba(124,58,237,0.1);
   box-shadow: 0 2px 12px rgba(0,0,0,0.03);
 }
 .light .skill-category:hover {
-  border-color: rgba(124,58,237,0.25);
-  box-shadow: 0 8px 24px rgba(124,58,237,0.08);
+  border-color: rgba(124,58,237,0.2);
+  box-shadow: 0 8px 24px rgba(124,58,237,0.06);
 }
+
+.skill-category-number {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.06;
+  pointer-events: none;
+  font-family: 'Fira Code', monospace;
+}
+
+.dark .skill-category-number { color: #A78BFA; }
+.light .skill-category-number { color: #7C3AED; }
 
 .skill-category-header {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 22px;
+  margin-bottom: 6px;
 }
 
 .skill-category-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
 }
 
-.dark .skill-category-icon { background: rgba(124,58,237,0.12); color: #A78BFA; }
-.light .skill-category-icon { background: rgba(124,58,237,0.08); color: #7C3AED; }
+.dark .skill-category-icon { background: rgba(124,58,237,0.1); color: #A78BFA; }
+.light .skill-category-icon { background: rgba(124,58,237,0.06); color: #7C3AED; }
 
 .skill-category h3 {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.3px;
 }
 .dark .skill-category h3 { color: #fff; }
 .light .skill-category h3 { color: #1a1a2e; }
 
+.skill-category-subtitle {
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.dark .skill-category-subtitle { color: #666; }
+.light .skill-category-subtitle { color: #999; }
+
+.skill-divider {
+  height: 1px;
+  margin: 16px 0;
+}
+.dark .skill-divider { background: linear-gradient(90deg, rgba(124,58,237,0.2), transparent); }
+.light .skill-divider { background: linear-gradient(90deg, rgba(124,58,237,0.1), transparent); }
+
 .skill-tags { display: flex; flex-wrap: wrap; gap: 10px; }
 
 .skill-tag {
-  font-size: 0.85rem;
-  padding: 8px 18px;
-  border-radius: 20px;
+  font-size: 0.82rem;
+  padding: 7px 16px;
+  border-radius: 8px;
   font-weight: 500;
   transition: all 0.3s ease;
   cursor: default;
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
+.skill-tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dark .skill-tag-dot { background: #7C3AED; }
+.light .skill-tag-dot { background: #7C3AED; }
+
 .dark .skill-tag {
-  background: rgba(124,58,237,0.08);
+  background: rgba(124,58,237,0.06);
   color: #c4b5fd;
-  border: 1px solid rgba(167,139,250,0.15);
+  border: 1px solid rgba(167,139,250,0.1);
 }
 
 .light .skill-tag {
-  background: rgba(124,58,237,0.04);
-  color: #6D28D9;
-  border: 1px solid rgba(124,58,237,0.12);
+  background: rgba(124,58,237,0.03);
+  color: #5B21B6;
+  border: 1px solid rgba(124,58,237,0.08);
 }
 
 .dark .skill-tag:hover {
-  box-shadow: 0 0 20px rgba(167,139,250,0.25);
-  border-color: #A78BFA;
-  background: linear-gradient(135deg, rgba(124,58,237,0.25), rgba(167,139,250,0.2));
+  border-color: rgba(167,139,250,0.3);
+  background: rgba(124,58,237,0.12);
   color: #fff;
-  transform: translateY(-2px) scale(1.05);
+  transform: translateY(-1px);
 }
 
 .light .skill-tag:hover {
-  box-shadow: 0 0 20px rgba(124,58,237,0.2);
-  border-color: #7C3AED;
-  background: linear-gradient(135deg, rgba(124,58,237,0.15), rgba(167,139,250,0.12));
+  border-color: rgba(124,58,237,0.2);
+  background: rgba(124,58,237,0.06);
   color: #7C3AED;
-  transform: translateY(-2px) scale(1.05);
+  transform: translateY(-1px);
 }
 
 /* ===== PROJECTS ===== */
