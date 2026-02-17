@@ -17,6 +17,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="footer-text">Built by <span>Muskan</span></p>
+          <p className="footer-copyright">© 2026 by Muskan. All rights reserved.</p>
         </div>
       </div>
     </footer>

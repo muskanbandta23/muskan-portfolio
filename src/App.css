@@ -1373,6 +1373,16 @@
   -webkit-text-fill-color: transparent;
 }
 
+.footer-copyright {
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin-top: 4px;
+}
+
+.dark .footer-copyright { color: #444; }
+.light .footer-copyright { color: #bbb; }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .hero-name { font-size: 3rem; }
