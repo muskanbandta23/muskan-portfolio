@@ -29,12 +29,6 @@ const Projects = () => {
       github: 'https://github.com/muskanbandta23/linkedin-research-assistant',
       live: 'https://muskanbandta23.github.io/linkedin-research-assistant/'
     },
-    {
-      title: 'Gold Stock Price Prediction',
-      description: 'Time-series analysis on gold stock datasets with predictive insights and data visualization using Seaborn and Matplotlib.',
-      tech: ['Python', 'Seaborn', 'Matplotlib', 'Pandas'],
-      github: 'https://github.com/muskanbandta23/Gold-Price-Prediction'
-    }
   ]
 
   return (
