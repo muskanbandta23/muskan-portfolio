@@ -3,28 +3,37 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi'
 const Projects = () => {
   const projects = [
     {
-      title: 'IRCTC Clone Website',
-      description: 'Developed a ticket booking system simulating the IRCTC website. Includes user authentication, train search, train booking, and a basic payment gateway interface with a responsive UI.',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/muskanbandta23/IRCTC'
+      title: 'InkGen : AI Content Engine',
+      description: 'Modular pipeline generating multi-format ebooks, blogs, and social assets using a 4-step workflow (research, outline, plan, write) with automated quality checks. Features a real-time dashboard with SSE streaming.',
+      tech: ['Python', 'OpenAI', 'Claude', 'Gemini', 'SSE', 'Quarto', 'D2'],
+      github: 'https://github.com/muskanbandta23/inkgen',
+      live: 'https://output-iota-nine.vercel.app/index.html'
     },
     {
       title: "Hosteller's Emporium",
-      description: 'An e-commerce website exclusively for university students to buy and sell products within the campus. Features include a chatbot for improved user interaction. Contributed as Front-End Developer and UX/UI Designer.',
+      description: 'E-commerce platform for university students to buy and sell campus products with secure authentication and responsive UI.',
       tech: ['React', 'Node.js', 'CSS'],
       github: 'https://github.com/muskanbandta23/Hosteller-s-Emporium'
     },
     {
-      title: 'Gold Stock Prices Prediction',
-      description: 'Analysed gold stock datasets to clean, preprocess, and visualize data. Performed time-series analysis and identified predictive insights on gold price trends using Seaborn and Matplotlib.',
-      tech: ['Python', 'Seaborn', 'Matplotlib', 'Pandas'],
-      github: 'https://github.com/muskanbandta23/Gold-Price-Prediction'
+      title: 'Competitor Intelligence Dashboard',
+      description: 'AI-driven competitor monitoring dashboard tracking 23+ sources via Google News RSS, Reddit API, and automated GitHub Actions CI/CD pipeline with 4x daily updates.',
+      tech: ['Python', 'GitHub Actions', 'RSS', 'Reddit API', 'CI/CD'],
+      github: 'https://github.com/muskanbandta23/zopnight-competitor-intel',
+      live: 'https://muskanbandta23.github.io/zopnight-competitor-intel/'
     },
     {
-      title: 'Fashion E-Commerce Website',
-      description: 'Created a static front-end design for an online fashion store. Focused on crafting the visual layout, styling, and a modern shopping experience.',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/muskanbandta23/Frontend-project-online-Fashion'
+      title: 'LinkedIn Research Assistant',
+      description: 'Full-stack lead discovery tool with ICP similarity scoring, region-based filtering, and a database of 273+ cloud companies using BrightData API and Google Search.',
+      tech: ['Python', 'BrightData API', 'Google Search', 'GitHub Pages'],
+      github: 'https://github.com/muskanbandta23/linkedin-research-assistant',
+      live: 'https://muskanbandta23.github.io/linkedin-research-assistant/'
+    },
+    {
+      title: 'Gold Stock Price Prediction',
+      description: 'Time-series analysis on gold stock datasets with predictive insights and data visualization using Seaborn and Matplotlib.',
+      tech: ['Python', 'Seaborn', 'Matplotlib', 'Pandas'],
+      github: 'https://github.com/muskanbandta23/Gold-Price-Prediction'
     }
   ]
 
@@ -38,6 +47,11 @@ const Projects = () => {
               <div className="project-card-header">
                 <h3>{project.title}</h3>
                 <div className="project-links">
+                  {project.live && (
+                    <a href={project.live} target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                      <FiExternalLink size={20} />
+                    </a>
+                  )}
                   <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <FiGithub size={20} />
                   </a>

@@ -1,4 +1,4 @@
-import { FiCode, FiDatabase, FiTool } from 'react-icons/fi'
+import { FiCode, FiDatabase, FiTool, FiCpu } from 'react-icons/fi'
 
 const Skills = () => {
   const skillCategories = [
@@ -6,7 +6,7 @@ const Skills = () => {
       icon: <FiCode size={20} />,
       title: 'Languages & Frameworks',
       subtitle: 'Building blocks of my code',
-      skills: ['Java', 'C++', 'JavaScript', 'HTML/CSS', 'React', 'Express', 'Node.js']
+      skills: ['Java', 'C++ (Fundamentals)', 'JavaScript', 'HTML/CSS', 'React', 'Express', 'Node.js']
     },
     {
       icon: <FiDatabase size={20} />,
@@ -18,7 +18,13 @@ const Skills = () => {
       icon: <FiTool size={20} />,
       title: 'Tools & Platforms',
       subtitle: 'My daily toolkit',
-      skills: ['VS Code', 'IntelliJ IDEA', 'GitHub', 'Google Colab', 'Figma']
+      skills: ['VS Code', 'IntelliJ IDEA', 'GitHub', 'Google Colab', 'Figma', 'Google AI Studio', 'Anthropic Claude']
+    },
+    {
+      icon: <FiCpu size={20} />,
+      title: 'Product & AI Automation',
+      subtitle: 'Strategy meets intelligence',
+      skills: ['User Research', 'Product Discovery', 'Competitive Analysis', 'Roadmap Thinking', 'Claude Technical Content Writing']
     }
   ]
 

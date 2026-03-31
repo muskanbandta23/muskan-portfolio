@@ -17,7 +17,7 @@ const About = () => {
             <p>
               I have also worked with technologies and domains including AI/ML, SQL, DBMS, and Computer Networks.
               I've contributed to projects as a Frontend Developer and UI/UX Designer, building practical and
-              user-friendly digital applications.
+              user-friendly digital applications. An effective communicator who collaborates well with both technical and non-technical stakeholders.
             </p>
             <p>
               Currently, I'm working as a <strong>Cloud Associate (Intern) at ZopDev</strong>, developing my expertise in cloud
