@@ -23,8 +23,8 @@ const Skills = () => {
     {
       icon: <FiCpu size={20} />,
       title: 'Product & AI Automation',
-      subtitle: 'Strategy meets intelligence',
-      skills: ['User Research', 'Product Discovery', 'Competitive Analysis', 'Roadmap Thinking', 'Claude Technical Content Writing']
+      subtitle: 'Simple strategies powered by AI',
+      skills: ['Research', 'Product Discovery', 'Competitor Analysis', 'AI Automation']
     }
   ]
 
