@@ -20,7 +20,7 @@ const About = () => {
               user-friendly digital applications. An effective communicator who collaborates well with both technical and non-technical stakeholders.
             </p>
             <p>
-              Currently, I'm working as a <strong>Cloud Associate (Intern) at ZopDev</strong>, developing my expertise in cloud
+              Currently, I'm working as a <strong>Cloud Associate at ZopDev</strong>, developing my expertise in cloud
               computing and SaaS development. Working on cloud infrastructure and backend systems at ZopDev.
             </p>
           </div>

@@ -12,7 +12,7 @@ const Experience = () => {
             </div>
             <div className="timeline-content">
               <div className="timeline-header">
-                <h3>Cloud Associate (Intern)</h3>
+                <h3>Cloud Associate</h3>
                 <span className="timeline-company">ZopDev</span>
               </div>
               <span className="timeline-date">Nov 2025 - Present</span>
@@ -23,6 +23,7 @@ const Experience = () => {
                 <li>Building foundational expertise in Cloud Computing, FinOps principles, and SaaS development.</li>
                 <li>Contribute to scalable, cost-aware solutions for real-world business use cases.</li>
                 <li>Researching cloud technologies, infrastructure trends, and cost-optimization strategies to support solution design and client recommendations.</li>
+                <li>Worked on GTM strategy and AI automation initiatives to streamline workflows and drive business impact.</li>
               </ul>
               <div className="timeline-tags">
                 <span>Cloud Computing</span>
