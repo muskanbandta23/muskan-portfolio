@@ -19,8 +19,8 @@ const Experience = () => {
               <ul className="timeline-list">
                 <li>Gain hands-on experience in cloud architecture, deployment pipelines, and system optimization.</li>
                 <li>Work on cloud infrastructure and backend systems to support scalable SaaS solutions.</li>
-                <li>Worked on GTM strategy and AI automation initiatives to streamline workflows and drive business impact.</li>
                 <li>Assisting in analyzing client cloud environments and understanding infrastructure requirements.</li>
+                <li>Worked on GTM strategy and AI automation initiatives to streamline workflows and drive business impact.</li>
                 <li>Building foundational expertise in Cloud Computing, FinOps principles, and SaaS development.</li>
                 <li>Contribute to scalable, cost-aware solutions for real-world business use cases.</li>
                 <li>Researching cloud technologies, infrastructure trends, and cost-optimization strategies to support solution design and client recommendations.</li>
