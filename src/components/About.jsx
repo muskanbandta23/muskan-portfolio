@@ -12,7 +12,7 @@ const About = () => {
             <p>
               Hey! I'm <strong>Muskan</strong>, a Computer Science Engineering graduate from Chitkara University, Punjab.
               Driven to design scalable digital solutions and solve real-world technical problems, with hands-on
-              experience in programming languages like Java (familiar with basic data structures in C++), frontend development, UI/UX design, and cloud computing.
+              experience in programming languages like Java and familiar with basic data structures in C++, frontend development, UI/UX design, and cloud computing.
             </p>
             <p>
               I have also worked with technologies and domains including AI/ML, SQL, DBMS, and Computer Networks.
