@@ -3,7 +3,7 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi'
 const Projects = () => {
   const projects = [
     {
-      title: 'InkGen : Content Engine (LLM-automation)',
+      title: 'InkGen : Content Engine',
       description: 'Built a 4-stage LLM pipeline (research, outline, plan, write) orchestrating OpenAI and Claude with automated quality checks. Real-time SSE dashboard streams progress. End-to-end content from one prompt to publishable ebook, blog or social asset, with no manual editing in the loop.',
       tech: ['OpenAI', 'Claude', 'Quarto', 'D2'],
       github: 'https://github.com/muskanbandta23/inkgen',
